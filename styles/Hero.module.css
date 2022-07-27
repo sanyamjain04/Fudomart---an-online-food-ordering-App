@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cherryDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: var(--pink);
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: var(--themeRed);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.miniText {
+  width: 70%;
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+}
+
+.right {
+  position: relative;
+}
+
+.imageContainer {
+  width: 38rem;
+  position: absolute;
+  top: -1rem;
+  left: 5rem;
+}
+
+.contactUs {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: max-content;
+  padding: 1rem;
+  top: 26.5rem;
+  border-radius: 5rem;
+  gap: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  color: var(--themeRed);
+  font-weight: 600;
+  left: 6rem;
+}
+
+.contactUs > div {
+  display: flex;
+  width: 2.5rem;
+  border-radius: 50%;
+  background: rgb(59, 200, 59);
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  color: white;
+}
+
+.contactUs:hover {
+  transform: scale(1.1);
+}
+
+.pizza {
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: var(--shadow);
+  padding: 0.5rem;
+  bottom: -1rem;
+  position: absolute;
+  border-radius: 0.5rem;
+  left: 33rem;
+  width: max-content;
+}
+
+.pizza > :nth-child(1) {
+  width: 6rem;
+  height: 4rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}   
+
+.pizza:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+
+}
