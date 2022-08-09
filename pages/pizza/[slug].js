@@ -2,8 +2,8 @@ import Image from "next/image";
 import css from "../../styles/Pizza.module.css";
 import Layout from "../../components/Layout";
 import { client, urlFor } from "../../lib/client";
-import LeftArrow from "../../assets/arrowleft.png";
-import RightArrow from "../../assets/arrowright.png";
+import LeftArrow from "../../assets/arrowLeft.png";
+import RightArrow from "../../assets/arrowRight.png";
 import { useState } from "react";
 
 export default function Pizza({ pizza }) {
@@ -23,7 +23,8 @@ export default function Pizza({ pizza }) {
     <Layout>
       <div className={css.container}>
         <div className={css.imageWrapper}>
-          <Image
+          <Image 
+          alt="imgae"
             loader={() => src}
             src={src}
             layout="fill"
